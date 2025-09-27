@@ -1,0 +1,23 @@
+meta {
+  name: add_scene
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/apis/scene-portlet/api/add-scene?projectId={{projectId}}&groupId={{groupId}}&name={{name}}
+  body: none
+  auth: none
+}
+
+params:query {
+  projectId: {{projectId}}
+  groupId: {{groupId}}
+  name: {{name}}
+}
+
+vars:pre-request {
+  projectId: 
+  groupId: 
+  name: 
+}

@@ -1,0 +1,27 @@
+meta {
+  name: get_ar_marker
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/apis/ar-marker-portlet/api/get-ar-marker?groupId={{groupId}}&projectId={{projectId}}&max={{max}}&needType={{needType}}&offset={{offset}}
+  body: none
+  auth: none
+}
+
+params:query {
+  groupId: {{groupId}}
+  projectId: {{projectId}}
+  max: {{max}}
+  needType: {{needType}}
+  offset: {{offset}}
+}
+
+vars:pre-request {
+  groupId: 27702
+  projectId: 77974
+  max: 100
+  needType: ALL
+  offset: 0
+}

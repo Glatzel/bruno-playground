@@ -1,0 +1,21 @@
+meta {
+  name: get_model_face_and_vertex_count
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/bim/webgl/getModelFaceAndVertexCount?projectId={{projectId}}&sceneId={{sceneId}}
+  body: none
+  auth: none
+}
+
+params:query {
+  projectId: {{projectId}}
+  sceneId: {{sceneId}}
+}
+
+vars:pre-request {
+  projectId: 77974
+  sceneId: 301031442
+}

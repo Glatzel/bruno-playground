@@ -1,0 +1,21 @@
+meta {
+  name: get_scene_link_tree
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/apis/scene-portlet/scenelink/get-scene-link-tree?groupId={{groupId}}&projectId={{projectId}}
+  body: none
+  auth: none
+}
+
+params:query {
+  groupId: {{groupId}}
+  projectId: {{projectId}}
+}
+
+vars:pre-request {
+  groupId: 27702
+  projectId: 77974
+}

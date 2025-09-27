@@ -1,0 +1,19 @@
+meta {
+  name: get_ar_marker_by_uuid
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/apis/ar-marker-portlet/api/get-ar-marker-by-uuid?uuid={{uuid}}
+  body: none
+  auth: none
+}
+
+params:query {
+  uuid: {{uuid}}
+}
+
+vars:pre-request {
+  uuid: be4c47fb-5983-4719-ba83-ef6ce9ffbc3a
+}

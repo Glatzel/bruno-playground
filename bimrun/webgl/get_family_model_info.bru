@@ -1,0 +1,19 @@
+meta {
+  name: get_family_model_info
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/bim/webgl/getFamilyTypePropertyInfo?modelId={{modelId}}
+  body: none
+  auth: none
+}
+
+params:query {
+  modelId: {{modelId}}
+}
+
+vars:pre-request {
+  modelId: 308629634
+}

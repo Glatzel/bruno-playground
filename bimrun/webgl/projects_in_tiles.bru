@@ -1,0 +1,19 @@
+meta {
+  name: projects_in_tiles
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/bim/webgl/projectsInTiles?projectIds={{projectIds}}
+  body: none
+  auth: none
+}
+
+params:query {
+  projectIds: {{projectIds}}
+}
+
+vars:pre-request {
+  projectIds: 77974
+}

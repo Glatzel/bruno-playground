@@ -1,0 +1,19 @@
+meta {
+  name: get_manifest
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/bim/webgl/getManifest?sceneId={{sceneId}}
+  body: none
+  auth: none
+}
+
+params:query {
+  sceneId: {{sceneId}}
+}
+
+vars:pre-request {
+  sceneId: 301031442
+}
